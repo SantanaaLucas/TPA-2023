@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class LojaAnimais {
+       public static void main  (String args []) {
+       Scanner ler = new Scanner (System.in);  
+       double numeroCoelhos, custo;
+    		   
+       numeroCoelhos = ler.nextDouble();
+       System.out.println ("Digite a quantidade de coelhos: ");
+       
+       custo = (numeroCoelhos*0.70)/18+10;
+       System.out.println ("Apresente o custo: " + custo);
+       
+       ler.close();
+       }
+}

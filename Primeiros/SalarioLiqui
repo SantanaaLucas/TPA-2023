@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class SalarioLiqui {
+	public static void main(String [] args) {
+		
+	int na;
+	double nh, salarioB, salarioL, percentInss, desc;
+	Scanner ler = new Scanner (System.in);
+	
+	System.out.println("Escreva o número de aulas dadas: ");
+	na = ler.nextInt();
+	System.out.println("Escreva o número de horas de aulas: ");
+	nh = ler.nextDouble();
+	System.out.println("Escreva o percentual do INSS: ");
+	percentInss = ler.nextDouble();
+	
+	salarioB = na*nh;
+	desc = salarioB*percentInss/100;
+	
+	salarioL = salarioB - desc;
+	System.out.println("O salário líquido é: " + salarioL);
+	
+	ler.close();
+  }
+}
