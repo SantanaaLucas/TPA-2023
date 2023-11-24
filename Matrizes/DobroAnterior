@@ -1,0 +1,22 @@
+import java.util.Random;
+public class DobroAnterior {
+	public static void main(String[] args) {		
+		int matriz[][], i, j, numeroAnt=1;
+		matriz = new int [4][4];		
+		matriz[0][0] = 1;
+		
+		for(i=0; i<4; i++) {
+			for(j=0; j<4; j++) {
+				matriz[i][j] = numeroAnt*2;
+				numeroAnt = matriz[i][j];						
+			}
+		}
+		
+		for(i=0; i<4; i++) {
+			System.out.println();
+			for(j=0; j<4; j++) {
+				System.out.print("["+matriz[i][j]+"]");
+			}
+		}
+	}
+}
