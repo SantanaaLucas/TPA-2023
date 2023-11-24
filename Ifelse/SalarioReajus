@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class SalarialReajus {
+			public static void main (String [] args) {
+				Scanner in = new Scanner (System.in);
+				double salario, reajus, reajus2, salarioNov, salarioNov2;
+				
+				System.out.println("Digite o valor do seu salário:");
+				salario = in.nextDouble();
+					
+				reajus  = (salario*5)/100
+				reajus2 = (salario*3.5)/100;
+				
+				if (salario == 1212.00) {
+					SalarioNov = salario + reajus;
+					System.out.println("Seu novo salário é " + salarioNov );}
+				else {
+					salarioNov2 = salario + reajus2;
+					System.out.println("Seu novo salário é " + salarioNov2);}
+				
+				in.close();
+			}
+	}

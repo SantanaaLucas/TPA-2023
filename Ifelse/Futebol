@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Futebol {
+	public static void main(String [] args){
+		Scanner ler = new Scanner(System.in);
+		double larg, cump, area;
+		
+		System.out.println("Escreva a largura da quadra: ");
+		larg = ler.nextDouble();	
+		System.out.println("Escreva  comprimento da quadra: ");
+		cump = ler.nextDouble();
+		
+		area = larg*cump;
+		if(area >= 110) {
+			System.out.println("Esta no padrão FIFA");
+		}else {
+			System.out.println("Esta fora do padrão FIFA");
+		}
+		
+		ler.close();
+	}
+
+}

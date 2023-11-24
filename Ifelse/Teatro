@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+public class Teatro {
+		public static void main (String arg []) {
+		Scanner in = new Scanner (System.in);
+		double ingresso, ingressoDesc;
+		String resposta; 
+		
+		System.out.println("Digite o valor do ingresso, please");
+		ingresso = in.nextDouble();
+		System.out.println("Você é estudante?");
+		resposta = in.next();
+		
+		if(resposta.equalsIgnoreCase("sim")) {
+			ingressoDesc = (ingresso*50)/100;
+			System.out.println("O preço do ingresso é " + ingressoDesc);
+		}
+		else {
+			System.out.println("O valor do ingresso é " + ingresso);
+		}
+			
+		in.close();		
+		}
+}
